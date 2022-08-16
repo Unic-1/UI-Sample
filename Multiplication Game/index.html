@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Multiplication Game</title>
+  </head>
+  <body>
+    <div class="card flex flex-col gap-8">
+      <p class="text-right">Score: <span id="score">0</span></p>
+      <h2 class="text-center text-2xl font-bold">
+        What is <span id="num1"></span> multiply by <span id="num2"></span>?
+      </h2>
+      <input
+        type="number"
+        name="result"
+        id="result"
+        inputmode="numeric"
+        placeholder="Enter your result"
+        autofocus
+        autocomplete="off"
+      />
+      <button
+        class="py-3 bg-green-500 rounded-md text-white uppercase"
+        onclick="submit()"
+      >
+        Submit
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
