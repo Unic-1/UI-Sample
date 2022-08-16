@@ -1,0 +1,27 @@
+.btn {
+  height: 50px;
+  width: 130px;
+  background-color: orange;
+  opacity: .7;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  background-color: orangered;
+  top: var(--yPos);
+  left: var(--xPos);
+  transform: translate(-50%, -50%);
+  transition: height .5s, width .5s;
+}
+
+.btn:hover::before {
+  height: 300px;
+  width: 300px;
+}
