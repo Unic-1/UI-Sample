@@ -25,3 +25,12 @@
   height: 300px;
   width: 300px;
 }
+
+.btn:hover {
+  color: white;
+}
+
+span {
+  position: relative;
+  z-index: 1;
+}
