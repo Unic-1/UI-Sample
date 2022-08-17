@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQ5-2H4TeBVEPxIPsLDJe0cJrjQ0cqNxD3LVomOHg7Phbgv4I8N0-tOqN7Aohtdx82D9xY8S7LM7Rd2pfI1CGo");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 160%;
+}
+
+.content {
+  padding: 30px 20%;
+  font-size: 22px;
+}
