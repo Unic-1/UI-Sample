@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: filter 3s;
+}
+
+.home>h1 {
+  color: white;
+  text-shadow: 5px 5px 10px black;
+}
+
+.btn {
+  height: 40px;
+  width: 100px;
+  background-color: orange;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: orangered;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.model {
+  padding: 30px;
+  background-image: url("https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
+  background-size: cover;
+  color: white;
+  width: 500px;
+  max-width: 500px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: animateIn 2s;
+}
+
+.discount {
+  color: violet;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form > input {
+  height: 30px;
+  padding: 0px 10px;
+  outline: none;
+}
+
+form > input::placeholder {
+  color: gray;
+}
+
+form > button[type=submit] {
+  height: 40px;
+  background-color: green;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+span.material-icons {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+span.material-icons:hover {
+  color: orangered;
+}
+
+@keyframes animateIn {
+  0% {
+    transform: translate(-50%, -70%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes animateOut {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -70%);
+    opacity: 0;
+  }
+}
