@@ -8,8 +8,9 @@ h1 {
   font-size: 30px;
 }
 
-.container {
-  padding: 20px;
+.contain {
+  padding: 40px;
+  width: 100%;
 }
 
 .color-box {
