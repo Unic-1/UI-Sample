@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drum kit</title>
+  </head>
+  <body>
+    <h1>Drum Kits</h1>
+    <!-- <audio id="audio">
+      <source src="crash.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio> -->
+    <audio id="crashAudio">
+      <source src="crash.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="kickAudio">
+      <source src="kick.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="snareAudio">
+      <source src="snare.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="tomAudio">
+      <source src="tom.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="drum-set">
+      <button class="crash" onclick="play('crash')">Crash</button
+      ><button class="kick" onclick="play('kick')">Kick</button
+      ><button class="snare" onclick="play('snare')">Snare</button
+      ><button class="tom" onclick="play('tom')">Tom</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
